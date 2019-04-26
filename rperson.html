@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Visions of Gutenberg - RDF/XML of Person</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Carlo Teo Pedretti, Francesca Mangialardo, Mattia Spadoni">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/hljs/rainbow.min.css">
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+
+  <nav class="navbar fixed-top navbar-expand-lg" id="opaque">
+  <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#">
+
+            <img src="images/logo.png" id="logo">
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">apps</i> Project
+            </a>
+
+            <div class="dropdown-menu">
+              <a href="ermodel.html" class="dropdown-item">
+                 E/R Model
+              </a>
+              <a href="items.html" class="dropdown-item">
+                 Items
+              </a>
+              <a href="metadata.html" class="dropdown-item">
+                 Metadata Alignments
+              </a>
+              <a href="theoretical.html" class="dropdown-item">
+                 Theoretical Model
+              </a>
+              <a href="conceptual.html" class="dropdown-item">
+                 Conceptual Model
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="description.html" class="dropdown-item">
+                 Description of Data
+              </a>
+              <a href="rdf.html" class="dropdown-item">
+                 RDF/XML
+              </a>
+              <a href="lod.html" class="dropdown-item">
+                 Connection to Authorities
+              </a>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="main main-raised-alt">
+    <div class="container">
+      <div class="section">
+
+        <!-- inizio breadcrumb -->
+        <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="description.html">RDF/XML</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Person</li>
+        </ol>
+        </nav>
+        <hr>
+        <!-- fine breadcrumb -->
+
+
+        <a class="anchor" id="guten"></a>
+        <h2 class="title" style="float:left;"><small class="text-muted">person/</small>Johannes Gutenberg</h2>
+        <h6 style="float:right;margin-top:55px;"><a href="#manuzio">Aldo Manuzio <i class="fas fa-arrow-alt-circle-down"></i></a></h6>
+        <div style="clear: both;"></div>
+        <br>
+
+        <!-- tabella -->
+
+        
+
+    <ul class="nav nav-pills nav-pills-primary" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist" aria-expanded="true">
+            RDF/XML
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link2" role="tablist" aria-expanded="false">
+            Turtle Syntax
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+            Graph
+        </a>
+    </li>
+</ul>
+<div class="tab-content tab-space">
+    <div class="tab-pane active" id="link1" aria-expanded="true">
+      <pre><code class="xml">
+
+            &#60;?xml version="1.0" encoding="UTF-8"?&#62;
+
+            &#60;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:bf="http://id.loc.gov/ontologies/bibframe/" 
+              xmlns:dc="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd" 
+              xmlns:dcterms="http://dublincore.org/schemas/xmls/qdc/dcterms.xsd" 
+              xmlns:eac-cpf="http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/" 
+              xmlns:owl="http://www.w3.org/2002/07/owl#"
+              xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+              xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts/"
+              xmlns:foaf="http://xmlns.com/foaf/spec//index.rdf" 
+              xml:base="http://semanticweb.org/visionsofgutenberg/Gutenberg"&#62;
+            &#60;rdf:description rdf:about="http://semanticweb.org/visionsofgutenberg/Gutenberg"&#62;
+            &#60;rdf:type rdf:resource="http://xmlns.com/foaf/spec/#term_Person"/&#62;
+            &#60;rdf:type rdf:resource="http://dbpedia.org/class/yago/Printer110475297"/&#62;
+            &#60;foaf:name&#62;Johannes Gutenberg&#60;/foaf:name&#62;
+            &#60;foaf:name&#62;Johannes Gensfleisch zur Laden zum Gutenberg&#60;/foaf:name&#62;
+            &#60;foaf:gender&#62;Male&#60;/foaf:gender&#62;
+            &#60;core:dateOfBirth&#62;1400?&#60;/core:dateOfBirth&#62;
+            &#60;core:placeOfBirth&#62;Mainz&#60;/core:placeOfBirth&#62;
+            &#60;core:dateOfDeath&#62;1468-02-03&#60;/core:dateOfDeath&#62;
+            &#60;core:placeOfDeath&#62;Mainz&#60;/core:placeOfDeath&#62;
+            &#60;bf:language&#62;German&#60;/bf:language&#62;
+            &#60;eac-cpf:biogHist&#62;
+            Johannes Gutenberg was a German blacksmith, goldsmith, inventor, printer, and publisher who introduced mechanical movable type printing to Europe. He is considered to be the starter of the so called Printing Revolution, a milestone in human history. He invented the moveable type, the ink and the printing press. 
+            &#60;/eac-cpf:biogHist&#62;
+            &#60;eac-cpf:occupation&#62;Printer, inventor, blacksmith&#60;/eac-cpf:occupation&#62;
+            &#60;foaf:interest&#62;Printing, Typography&#60;/foaf:interest&#62;
+            &#60;eac-cpf:resourceRelation rdf:parseType="Resource"&#62;
+              &#60;eac-cpf:resourceRelationType&#62;other&#60;/eac-cpf:resourceRelationType&#62;
+              &#60;dcterms:relation rdf:resource="https://viaf.org/viaf/88647567/"/&#62;
+              &#60;dc:description&#62;
+              Gutenberg founded a societas with the goldsmith Johann Fust to print the christian Bible. Fust loaned Gutenberg 1600 dutch florins with which he could hire 20 workers and buy the printing materials.
+              &#60;/dc:description&#62;
+              &#60;dc:date&#62;1450&#60;/dc:date&#62;
+            &#60;/eac-cpf:resourceRelation&#62;
+            &#60;eac-cpf:resourceRelation rdf:parseType="Resource"&#62;
+              &#60;eac-cpf:resourceRelationType&#62;creatorOf&#60;/eac-cpf:resourceRelationType&#62;
+              &#60;dcterms:relation rdf:resource="http://semanticweb.org/visionsofgutenberg/42lineBible"/&#62;
+              &#60;dc:description&#62;
+              Gutenberg printed the 42-line Bible as the earliest major book using mass-produced movable metal type in Europe.
+              &#60;/dc:description&#62;
+              &#60;dc:date&#62;1455&#60;/dc:date&#62;
+            &#60;/eac-cpf:resourceRelation&#62;
+
+            &#60;owl:sameAs rdf:resource="https://viaf.org/viaf/9815820/"/&#62;
+            &#60;foaf:isPrimaryTopicOf rdf:resource="http://www.gutenberg-museum.de/index.php?id=29&L=1"/&#62;
+            &#60;foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/Johannes_Gutenberg"/&#62;
+            &#60;dcterms:ispartOf rdf:resource="http://id.loc.gov/vocabulary/relators/prt"/&#62;
+            &#60;skos:related rdf:resource="http://viaf.org/viaf/222144783012221996488"/&#62;
+            &#60;skos:related rdf:resource="http://semanticweb.org/visionsofgutenberg/GutenbergPortrait"/&#62;
+
+            &#60;/rdf:description&#62;
+            &#60;/rdf:RDF&#62;
+          
+
+      </code></pre>
+
+    </div>
+    <div class="tab-pane" id="link2" aria-expanded="false">
+        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+        <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+    </div>
+    <div class="tab-pane" id="link3" aria-expanded="false">
+        <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">
+    </div>
+</div>
+
+
+
+
+
+<hr>
+
+
+<a class="anchor" id="manuzio"></a>
+<h2 class="title" style="float:left;"><small class="text-muted">person/</small>Aldo Manuzio</h2>
+        <h6 style="float:right;margin-top:55px;"><a href="#guten">Johannes Gutenberg <i class="fas fa-arrow-alt-circle-up"></i></a></h6>
+        <div style="clear: both;"></div>
+        <br>
+      
+
+        <!-- tabella -->
+  <ul class="nav nav-pills nav-pills-primary" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#link4" role="tablist" aria-expanded="true">
+            RDF/XML
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link5" role="tablist" aria-expanded="false">
+            Turtle Syntax
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link6" role="tablist" aria-expanded="false">
+            Graph
+        </a>
+    </li>
+</ul>
+<div class="tab-content tab-space">
+    <div class="tab-pane active" id="link4" aria-expanded="true">
+      <pre><code class="xml">
+
+            &#60;?xml version="1.0" encoding="UTF-8"?&#62;
+
+            &#60;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:bf="http://id.loc.gov/ontologies/bibframe/" 
+              xmlns:dc="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd" 
+              xmlns:dcterms="http://dublincore.org/schemas/xmls/qdc/dcterms.xsd" 
+              xmlns:eac-cpf="http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/" 
+              xmlns:owl="http://www.w3.org/2002/07/owl#"
+              xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+              xmlns:core="http://www.bbc.co.uk/ontologies/coreconcepts/"
+              xmlns:foaf="http://xmlns.com/foaf/spec//index.rdf" 
+              xml:base="http://semanticweb.org/visionsofgutenberg/Manuzio"&#62;
+            &#60;rdf:description rdf:about="http://semanticweb.org/visionsofgutenberg/Manuzio"&#62;
+            &#60;rdf:type rdf:resource="http://xmlns.com/foaf/spec/#term_Person"/&#62;
+            &#60;rdf:type rdf:resource="http://dbpedia.org/class/yago/WikicatItalianRenaissanceHumanists"/&#62;
+            &#60;foaf:name xml:lang="it"&#62;Aldo Manuzio&#60;/foaf:name&#62;
+            &#60;foaf:name xml:lang="la"&#62;Aldus Pius Manutius&#60;/foaf:name&#62;
+            &#60;foaf:gender&#62;Male&#60;/foaf:gender&#62;
+            &#60;core:dateOfBirth&#62;1449?&#60;/core:dateOfBirth&#62;
+            &#60;core:placeOfBirth&#62;Bassiano&#60;/core:placeOfBirth&#62;
+            &#60;core:dateOfDeath&#62;1515-02-06&#60;/core:dateOfDeath&#62;
+            &#60;core:placeOfDeath&#62;Venezia&#60;/core:placeOfDeath&#62;
+            &#60;bf:language&#62;Italian&#60;/bf:language&#62;
+            &#60;bf:language&#62;Latin&#60;/bf:language&#62;
+            &#60;eac-cpf:biogHist&#62;
+            Aldo Manuzio was an Italian editor, grammarian and humanist. He is considered to be one of the major editors of all times, and also one of the first editors in the modern sense at all. Founder of the Aldine Press, he introduced the italic type and the octavo size. 
+            &#60;/eac-cpf:biogHist&#62;
+            &#60;eac-cpf:occupation&#62;Editor, grammarian, humanist&#60;/eac-cpf:occupation&#62;
+            &#60;foaf:interest&#62;Printing, Publishing, Typography&#60;/foaf:interest&#62;
+            &#60;eac-cpf:resourceRelation rdf:parseType="Resource"&#62;
+              &#60;eac-cpf:resourceRelationType&#62;other&#60;/eac-cpf:resourceRelationType&#62;
+              &#60;dcterms:relation rdf:resource="https://viaf.org/viaf/51189284/"/&#62;
+              &#60;dc:description&#62;
+              Aldo Manuzio in 1501 bought typographical characters from Francesco Griffo in order to use them in one of his printed series of books.
+              &#60;/dc:description&#62;
+              &#60;dc:date&#62;1501&#60;/dc:date&#62;
+            &#60;/eac-cpf:resourceRelation&#62;
+            &#60;eac-cpf:resourceRelation rdf:parseType="Resource"&#62;
+              &#60;eac-cpf:resourceRelationType&#62;creatorOf&#60;/eac-cpf:resourceRelationType&#62;
+              &#60;dcterms:relation rdf:resource="http://semanticweb.org/visionsOfgutenberg/HypnerotomachiaPoliphili"/&#62;
+              &#60;dc:description&#62;
+              Manuzio printed the Hypnerotomachia Poliphili, one of the first books printed in Italy and also considered by reneissance people as the most beautiful book ever printed.
+              &#60;/dc:description&#62;
+              &#60;dc:date&#62;1499&#60;/dc:date&#62;
+            &#60;/eac-cpf:resourceRelation&#62;
+
+            &#60;owl:sameAs rdf:resource="http://viaf.org/viaf/96325760"/&#62;
+            &#60;foaf:isPrimaryTopicOf rdf:resource="http://id.sbn.it/bid/MIL0267110"/&#62;
+            &#60;foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/Aldus_Manutius"/&#62;
+            &#60;dcterms:ispartOf rdf:resource="http://id.loc.gov/vocabulary/relators/pbl"/&#62;
+            &#60;skos:related rdf:resource="http://viaf.org/viaf/54144140"/&#62;
+
+            &#60;/rdf:description&#62;
+            &#60;/rdf:RDF&#62;
+
+                </code></pre>
+    </div>
+    <div class="tab-pane" id="link5" aria-expanded="false">
+        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
+        <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+    </div>
+    <div class="tab-pane" id="link6" aria-expanded="false">
+        <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">
+    </div>
+</div> 
+
+  <!-- griglia icone  1 -->
+        <hr>
+        <!-- pagination inizio -->
+  <div class="container">
+  <div class="row">
+
+    <div class="col">
+      
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-start">
+          <li class="page-item">
+            <a class="page-link" style="font-size: 100%;" href="rdf.html"><i class="fas fa-arrow-alt-circle-left"></i>  RDF/XML</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    
+    <div class="col">
+      
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" style="font-size: 100%;" href="rplace.html">Place  <i class="fas fa-arrow-alt-circle-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+  </div>
+
+  <!-- pagination fine -->
+        
+
+        <!-- fine griglia icone 2 -->
+
+      </div>
+    </div>
+  </div>
+
+<!-- INIZIO FOOTER -->
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+              Copyright Creative Commons
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, Visions of Gutenberg has been implemented with <i class="material-icons">favorite</i> by
+        Francesca Mangialardo, Carlo Teo Pedretti and Mattia Spadoni.
+      </div>
+    </div>
+  </footer>
+  <!-- FINE FOOTER -->
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script></body>
+</html>

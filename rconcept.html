@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Visions of Gutenberg - RDF/XML of Concept</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="author" content="Carlo Teo Pedretti, Francesca Mangialardo, Mattia Spadoni">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <!-- Material Kit CSS -->
+    <link href="assets/css/material-kit.css?v=2.0.5" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/hljs/rainbow.min.css">
+    <script src="assets/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+
+  <nav class="navbar fixed-top navbar-expand-lg" id="opaque">
+  <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="#">
+
+            <img src="images/logo.png" id="logo">
+            
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="dropdown nav-item">
+            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+              <i class="material-icons">apps</i> Project
+            </a>
+
+            <div class="dropdown-menu">
+              <a href="ermodel.html" class="dropdown-item">
+                 E/R Model
+              </a>
+              <a href="items.html" class="dropdown-item">
+                 Items
+              </a>
+              <a href="metadata.html" class="dropdown-item">
+                 Metadata Alignments
+              </a>
+              <a href="theoretical.html" class="dropdown-item">
+                 Theoretical Model
+              </a>
+              <a href="conceptual.html" class="dropdown-item">
+                 Conceptual Model
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="description.html" class="dropdown-item">
+                 Description of Data
+              </a>
+              <a href="rdf.html" class="dropdown-item">
+                 RDF/XML
+              </a>
+              <a href="lod.html" class="dropdown-item">
+                 Connection to Authorities
+              </a>
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="main main-raised-alt">
+    <div class="container">
+      <div class="section">
+
+        <!-- inizio breadcrumb -->
+        <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="description.html">RDF/XML</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Concept/Subject</li>
+        </ol>
+        </nav>
+        <hr>
+        <!-- fine breadcrumb -->
+
+        <a class="anchor" id="guten"></a>
+        <h2 class="title" style="float:left;"><small class="text-muted">concept/</small>Printing Press Revolution</h2>
+        <h6 style="float:right;margin-top:55px;"><a href="#manuzio">Incunabulum <i class="fas fa-arrow-alt-circle-down"></i></a></h6>
+        <div style="clear: both;"></div>
+        <br>
+
+        <!-- tabella -->
+
+        
+
+    <ul class="nav nav-pills nav-pills-primary" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist" aria-expanded="true">
+            RDF/XML
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link2" role="tablist" aria-expanded="false">
+            Turtle Syntax
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link3" role="tablist" aria-expanded="false">
+            Graph
+        </a>
+    </li>
+</ul>
+<div class="tab-content tab-space">
+    <div class="tab-pane active" id="link1" aria-expanded="true">
+      <pre><code class="xml">
+
+        &#60;?xml version="1.0" encoding="UTF-8"?&#62;
+
+            &#60;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+              xmlns:dc="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd" 
+              xmlns:dcterms="http://dublincore.org/schemas/xmls/qdc/dcterms.xsd" 
+              xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" 
+              xmlns:owl="http://www.w3.org/2002/07/owl#"
+              xmlns:skos="http://www.w3.org/2004/02/skos/core#"  
+              xml:base="http://semanticweb.org/visionsofgutenberg/PrintingRevolution"&#62;
+            &#60;rdf:description rdf:about="http://semanticweb.org/visionsofgutenberg/PrintingRevolution"&#62;
+            &#60;rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/&#62;
+            &#60;rdfs:label xml:lang="en"&#62;Printing Press Revolution&#60;/rdfs:label&#62;
+            &#60;dc:subject rdf:resource="http://dbpedia.org/page/Printing_press"/&#62;
+            &#60;dc:description&#62;A fundamental process started in Western Europe around 1450 that contributed to a bigger diffusion of culture and books through all Europe. This revolution affected all knowledge domains as Geography, history, literature, religion, astronomy and printing press became a tool to convey knowledge and propaganda. Indeed printing press was a fundamental tool for Protestants and Roman Church to share their messages along Europe.&#60;/dc:description&#62;
+            &#60;dcterms:spatial&#62;Europe&#60;/dcterms:spatial&#62;
+            &#60;dcterms:temporal&#62;1400, 1500&#60;/dcterms:temporal&#62;
+            &#60;crm:P10_falls_within rdf:resource="http://dbpedia.org/page/Middle_Ages"/&#62;
+            &#60;crm:P10_falls_within rdf:resource="http://dbpedia.org/page/Renaissance"/&#62;
+
+            &#60;owl:sameAs rdf:resource="http://id.loc.gov/authorities/subjects/sh85106826"/&#62;
+            &#60;owl:differentFrom rdf:resource="http://id.loc.gov/authorities/subjects/sh85147844"/&#62;
+            &#60;skos:related rdf:resource="https://en.wikipedia.org/wiki/Johannes_Gutenberg"/&#62;
+            &#60;skos:broader rdf:resource="http://dbpedia.org/page/Category:German_inventions"/&#62;
+            &#60;skos:broader rdf:resource="http://dbpedia.org/page/Category:Technology_in_society"/&#62;
+            &#60;skos:broader rdf:resource="http://dbpedia.org/page/Category:Protestant_Reformation"/&#62;
+            &#60;skos:broader rdf:resource="http://dbpedia.org/page/Category:History_of_printing"/&#62;
+            &#60;skos:broader rdf:resource="http://dbpedia.org/page/Revolution"/&#62;
+            &#60;skos:narrower rdf:resource="http://dbpedia.org/page/Typography"/&#62;
+            &#60;rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Category:Printing_Revolution"/&#62;
+
+            &#60;/rdf:description&#62;
+            &#60;/rdf:RDF&#62;
+          
+
+      </code></pre>
+
+    </div>
+    <div class="tab-pane" id="link2" aria-expanded="false">
+
+        <pre><code class="xml">
+          @prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+          @prefix skos: &#60;http://www.w3.org/2004/02/skos/core#&#62;.
+          @prefix dcterms: &#60;http://purl.org/dc/elements/1.1/&#62;.
+          @prefix rdfs: &#60;http://www.w3.org/2000/01/rdf-schema#&#62;.
+          @prefix dcterms: &#60;http://purl.org/dc/terms/&#62;.
+          @prefix owl: &#60;http://www.w3.org/2002/07/owl#&#62;.
+          @prefix crm: &#60;http://www.cidoc-crm.org/cidoc-crm/&#62;.
+
+
+          &#60;http://semanticweb.org/visionsofgutenberg/PrintingRevolution&#62;  
+            rdf:type &#60;http://www.w3.org/2004/02/skos/core#Concept&#62; ;
+            rdfs:label  'Printing Press Revolution' ;
+            dc:description  'A fundamental process started in Western Europe around 1450 that contributed to a bigger diffusion of culture and books through all Europe. This revolution affected all knowledge domains as Geography, history, literature, religion, astronomy and printing press became a tool to convey knowledge and propaganda. Indeed printing press was a fundamental tool for Protestants and Roman Church to share their messages along Europe.' ;
+            dc:subject &#60;http://dbpedia.org/page/Printing_press&#62; ;
+            dcterms:spatial 'Europe' ;
+            dcterms:temporal  '1400, 1500' ;
+            crm:P10_falls_within &#60;http://dbpedia.org/page/Middle_Ages&#62; ;
+              crm:P10_falls_within &#60;http://dbpedia.org/page/Renaissance&#62; ;
+
+
+            skos:related &#60;https://en.wikipedia.org/wiki/Johannes_Gutenberg&#62; ;
+              skos:broader &#60;http://dbpedia.org/page/Revolution&#62; ;
+              skos:broader &#60;http://dbpedia.org/page/Category:German_inventions&#62; ;
+              skos:broader &#60;http://dbpedia.org/page/Category:Technology_in_society&#62; ;
+              skos:broader &#60;http://dbpedia.org/page/Category:Protestant_Reformation&#62; ;
+              skos:broader &#60;http://dbpedia.org/page/Category:History_of_printing&#62; ;
+              rdfs:seeAlso &#60;http://dbpedia.org/page/Category:Printing_Revolution&#62; ;
+            skos:narrower &#60;http://dbpedia.org/page/Typography&#62; ;
+            owl:sameAs &#60;http://id.loc.gov/authorities/subjects/sh85106826&#62; ;
+            owl:differentFrom &#60;http://id.loc.gov/authorities/subjects/sh85147844&#62; .
+
+        </code></pre>
+    </div>
+    <div class="tab-pane" id="link3" aria-expanded="false">
+        <img src="images/printingg.png" class="img-fluid" alt="Responsive image">
+    </div>
+</div>
+
+
+
+
+
+<hr>
+
+
+
+<a class="anchor" id="manuzio"></a>
+<h2 class="title" style="float:left;"><small class="text-muted">concept/</small>Incunabulum</h2>
+        <h6 style="float:right;margin-top:55px;"><a href="#guten">Printing Press Revolution <i class="fas fa-arrow-alt-circle-up"></i></a></h6>
+        <div style="clear: both;"></div>
+        <br>
+
+        <!-- tabella -->
+  <ul class="nav nav-pills nav-pills-primary" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#link4" role="tablist" aria-expanded="true">
+            RDF/XML
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link5" role="tablist" aria-expanded="false">
+            Turtle Syntax
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#link6" role="tablist" aria-expanded="false">
+            Graph
+        </a>
+    </li>
+</ul>
+<div class="tab-content tab-space">
+    <div class="tab-pane active" id="link4" aria-expanded="true">
+      <pre><code class="xml">
+
+          &#60;?xml version="1.0" encoding="UTF-8"?&#62;
+
+          &#60;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+          xmlns:dc="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd" 
+          xmlns:dcterms="http://dublincore.org/schemas/xmls/qdc/dcterms.xsd" 
+          xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" 
+          xmlns:owl="http://www.w3.org/2002/07/owl#"
+          xmlns:skos="http://www.w3.org/2004/02/skos/core#"  
+          xml:base="http://semanticweb.org/visionsofgutenberg/Incunable"&#62;
+          &#60;rdf:description rdf:about="http://semanticweb.org/visionsofgutenberg/Incunable"&#62;
+          &#60;rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/&#62;
+          &#60;rdfs:label xml:lang="la"&#62;Incunabulum&#60;/rdfs:label&#62;
+          &#60;dc:subject rdf:resource="http://dbpedia.org/page/Incunable"/&#62;
+          &#60;dc:description&#62;Incunabula (plural form for incunabulum) is a term to refer to the first modern books, conventionally those ones printed with moveable types between the XV century and 1500 included.&#60;/dc:description&#62;
+          &#60;dcterms:spatial&#62;Europe&#60;/dcterms:spatial&#62;
+          &#60;dcterms:temporal&#62;XV century, 1500&#60;/dcterms:temporal&#62;
+          &#60;crm:P10_falls_within rdf:resource="http://dbpedia.org/page/Middle_Ages"/&#62;
+          &#60;crm:P10_falls_within rdf:resource="http://dbpedia.org/page/Renaissance"/&#62;
+
+          &#60;owl:sameAs rdf:resource="http://id.loc.gov/authorities/subjects/sh85064810"/&#62;
+          &#60;skos:related rdf:resource="https://en.wikipedia.org/wiki/Manuscript"/&#62;
+          &#60;skos:broader rdf:resource="http://dbpedia.org/page/Category:15th-century_books"/&#62;
+          &#60;skos:broader rdf:resource="http://dbpedia.org/ontology/Book"/&#62;
+          &#60;skos:broader rdf:resource="http://dbpedia.org/page/Revolution"/&#62;
+          &#60;skos:narrower rdf:resource="http://semanticweb.org/visionsofgutenberg/HypnerotomachiaPoliphili"/&#62;
+          &#60;skos:narrower rdf:resource="http://semanticweb.org/visionsofgutenberg/42lineBible"/&#62;
+
+          &#60;/rdf:description&#62;
+          &#60;/rdf:RDF&#62;
+
+                </code></pre>
+    </div>
+    <div class="tab-pane" id="link5" aria-expanded="false">
+        
+        <pre><code class="xml">
+
+          @prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+          @prefix skos: &#60;http://www.w3.org/2004/02/skos/core#&#62;.
+          @prefix dcterms: &#60;http://purl.org/dc/elements/1.1/&#62;.
+          @prefix rdfs: &#60;http://www.w3.org/2000/01/rdf-schema#&#62;.
+          @prefix dcterms: &#60;http://purl.org/dc/terms/&#62;.
+          @prefix owl: &#60;http://www.w3.org/2002/07/owl#&#62;.
+          @prefix crm: &#60;http://www.cidoc-crm.org/cidoc-crm/&#62;.
+
+          &#60;http://semanticweb.org/visionsofgutenberg/Incunable&#62;
+          rdf:type &#60;http://www.w3.org/2004/02/skos/core#Concept&#62; ;
+          rdfs:label 'Incunabulum' ;
+          dc:description  'Incunabula (plural form for incunabulum) is a term to refer to the first modern books, conventionally those ones printed with moveable types between the XV century and 1500 included.'  ;
+          dc:subject &#60;http://dbpedia.org/page/Incunable&#62; ;
+          dcterms:spatial 'Europe' ;
+          dcterms:temporal 'XV century, 1500' ;
+          crm:P10_falls_within &#60;http://dbpedia.org/page/Middle_Ages&#62; ;
+            crm:P10_falls_within &#60;http://dbpedia.org/page/Renaissance&#62; ;
+
+          skos:related  &#60;http://id.loc.gov/authorities/names/n2016070067&#62; ;
+          skos:broader &#60;http://dbpedia.org/ontology/Book&#62; ;
+          skos:broader &#60;http://dbpedia.org/page/Category:15th-century_books&#62; ;
+          skos:narrower &#60;http://semanticweb.org/visionsofgutenberg/42LineBible&#62; ;
+          skos:narrower &#60;http://semanticweb.org/visionsofgutenberg/HypnerotomachiaPoliphili&#62; ;
+          skos:related &#60;https://en.wikipedia.org/wiki/Manuscript&#62; ;
+          owl:sameAs &#60;http://id.loc.gov/authorities/subjects/sh85064810&#62; .
+
+        </code></pre>
+
+    </div>
+    <div class="tab-pane" id="link6" aria-expanded="false">
+        <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">
+    </div>
+</div> 
+
+  <!-- griglia icone  1 -->
+        <hr>
+        <!-- pagination inizio -->
+  <div class="container">
+  <div class="row">
+
+    <div class="col">
+      
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-start">
+          <li class="page-item">
+            <a class="page-link" style="font-size: 100%;" href="rdate.html"><i class="fas fa-arrow-alt-circle-left"></i>  Date</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    
+    <div class="col">
+      
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item">
+            <a class="page-link" style="font-size: 100%;" href="lod.html">LOD and Semantic Web  <i class="fas fa-arrow-alt-circle-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+  </div>
+
+  <!-- pagination fine -->
+        
+
+        <!-- fine griglia icone 2 -->
+
+      </div>
+    </div>
+  </div>
+
+<!-- INIZIO FOOTER -->
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+              Copyright Creative Commons
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        <script>
+          document.write(new Date().getFullYear())
+        </script>, Visions of Gutenberg has been implemented with <i class="material-icons">favorite</i> by
+        Francesca Mangialardo, Carlo Teo Pedretti and Mattia Spadoni.
+      </div>
+    </div>
+  </footer>
+  <!-- FINE FOOTER -->
+<!--   Core JS Files   -->
+<script src="assets/js/core/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<!--  Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+<script src="assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+<!--  Google Maps Plugin  -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+<script src="assets/js/material-kit.js?v=2.0.5" type="text/javascript"></script></body>
+</html>

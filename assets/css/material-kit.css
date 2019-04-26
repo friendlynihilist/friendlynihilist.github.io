@@ -26,6 +26,33 @@ per cambiare opacità del dropdown cercare .open>.dropdown-menu,
   e cambiare opacity in .1
  */
 
+ a.anchor {
+          display: block;
+          position: relative;
+          top: -60px;
+          visibility: hidden;
+      }
+
+ .spaceb {
+  display: flex;
+  justify-content: space-between;
+}
+
+ #gutenbergbg {
+    position: absolute;
+    opacity: 0.04;
+    width: 70%;
+    margin: -30px 0 0 -30px;
+}
+
+
+
+ .scrollme {
+    overflow-y: auto;
+}
+
+/* questo per fare scrollare le table */
+
  #opaque {
   background: rgba(0, 0, 0, 0.3);
  }
@@ -920,7 +947,9 @@ small,
 mark,
 .mark {
   padding: 0.2em;
-  background-color: #fcf8e3;
+  background-color: #C0B283;
+  opacity: 0.9 !important;
+  color: white !important;
 }
 
 .list-unstyled {
@@ -1949,6 +1978,7 @@ pre code {
 .table-sm th,
 .table-sm td {
   padding: 0.3rem;
+  font-size: 0.8rem;
 }
 
 .table-bordered {
@@ -4866,10 +4896,10 @@ tbody.collapse.show {
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  padding: 0.75rem 1rem 0rem;
+  margin-bottom: -0.2rem;
   list-style: none;
-  background-color: #e9ecef;
+  background-color: #fff;
   border-radius: 0.25rem;
 }
 
@@ -4913,7 +4943,7 @@ tbody.collapse.show {
 
 .page-link:hover {
   color: #0a6ebd;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: #e9ecef;
   border-color: #dee2e6;
 }
@@ -10996,13 +11026,13 @@ legend {
 }
 
 a {
-  color: #9c27b0;
+  color: #4281a4;
 }
 
 a:hover,
 a:focus {
-  color: #C0B283;
-  text-decoration: none;
+  color: #4281a4;
+  text-decoration: underline;
 }
 
 a.text-info:hover,
@@ -14030,7 +14060,7 @@ textarea {
   padding: 0.625rem 0;
   margin-bottom: 20px;
   color: #555;
-  background-color: rgba(255, 255, 255, .96) !important;
+  background-color: rgba(255, 255, 255, 1) !important;
   box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12), 0 7px 10px -5px rgba(0, 0, 0, 0.15);
 }
 
@@ -14500,7 +14530,7 @@ textarea {
   min-width: 30px;
   height: 30px;
   line-height: 30px;
-  color: #999999;
+  color: #4281a4;
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
@@ -14512,7 +14542,7 @@ textarea {
 .pagination>.page-item>.page-link:focus,
 .pagination>.page-item>span:hover,
 .pagination>.page-item>span:focus {
-  color: #999999;
+  color: #4281a4;
 }
 
 .pagination>.page-item.active>a,
@@ -14607,8 +14637,8 @@ textarea {
 
 .nav-pills .nav-item .nav-link.active {
   color: #fff;
-  background-color: #9c27b0;
-  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2), 0 13px 24px -11px rgba(156, 39, 176, 0.6);
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(160, 155, 109, 0.4);
+  background-color: #C0B283;
 }
 
 .nav-pills .nav-item i {
@@ -14769,8 +14799,11 @@ html * {
 
 h1,
 .h1 {
-  font-size: 3.3125rem;
+  font-size: 5rem;
   line-height: 1.15em;
+  font-family: 'Goudy Bookletter 1911', serif;
+  text-shadow: rgb(0, 0, 0) 0px 1px 3px;
+  color:#C0B283;
 }
 
 h2,
@@ -14847,6 +14880,10 @@ small,
 .media .media-heading a {
   color: #3C4858;
   text-decoration: none;
+}
+
+.info-title:hover {
+  text-decoration: underline;
 }
 
 h2.title {
@@ -15266,7 +15303,7 @@ h2.title {
 .open>.dropdown-menu,
 .dropdown-menu.show {
   display: block;
-  opacity: .96;
+  opacity: 1;
   transform: scale(1);
 }
 

@@ -167,11 +167,30 @@
 
     </div>
     <div class="tab-pane" id="link2" aria-expanded="false">
-        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-        <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+      <pre><code class="nohighlight">
+        @prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+        @prefix crm: &#60;http://www.cidoc-crm.org/cidoc-crm/&#62;.
+        @prefix dc: &#60;http://purl.org/dc/elements/1.1/&#62;.
+        @prefix foaf: &#60;http://xmlns.com/foaf/0.1/&#62;.
+        @prefix eac-cpf: &#60;http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/&#62;.
+        @prefix dcterms &#60;http://dublincore.org/schemas/xmls/qdc/dcterms.xsd&#62;.
+
+        &#60;http://semanticweb.org/visionsOfGutenberg/1455&#62;		
+          rdf:type &#60;http://dbpedia.org/ontology/TimePeriod&#62; ;
+          rdf:type &#60;http://dbpedia.org/ontology/Year&#62; ;
+          dc:date '1455' ;
+          eac-cpf:resourceRelation [
+            eac-cpf:resourceRelationType 'Other' ;
+            dcterms:relation &#60;http://semanticweb.org/visionsOfGutenberg/42LineBible&#62; ;
+            dc:description 'The 1455 Bible, also called 42 line Bible or Gutenberg Bible, is the first complete book extant in the West.' ;
+          ] ;
+          foaf:isPrimaryTopicOf &#60;https://it.wikipedia.org/wiki/1455&#62; ;
+          crm:P10_falls_within &#60;http://dbpedia.org/page/Middle_Ages&#62; .
+        </code></pre>
+      
     </div>
     <div class="tab-pane" id="link3" aria-expanded="false">
-        <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">
+        <img src="images/1455g.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
 
@@ -212,32 +231,27 @@
     <div class="tab-pane active" id="link4" aria-expanded="true">
       <pre><code class="xml">
 
-          &#60;?xml version="1.0" encoding="UTF-8"?&#62;
+          <pre><code class="nohighlight">
+        @prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+        @prefix crm: &#60;http://www.cidoc-crm.org/cidoc-crm/&#62;.
+        @prefix dc: &#60;http://purl.org/dc/elements/1.1/&#62;.
+        @prefix foaf: &#60;http://xmlns.com/foaf/0.1/&#62;.
+        @prefix eac-cpf: &#60;http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/&#62;.
+        @prefix dcterms &#60;http://dublincore.org/schemas/xmls/qdc/dcterms.xsd&#62;.
 
-          &#60;rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-            xmlns:dc="http://dublincore.org/schemas/xmls/qdc/2003/04/02/dc.xsd" 
-            xmlns:dcterms="http://dublincore.org/schemas/xmls/qdc/dcterms.xsd" 
-            xmlns:eac-cpf="http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/"
-            xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" 
-            xmlns:foaf="http://xmlns.com/foaf/spec//index.rdf" 
-            xml:base="http://semanticweb.org/visionsofgutenberg/1499"&#62;
-          &#60;rdf:description rdf:about="http://semanticweb.org/visionsofgutenberg/1499"&#62;
-          &#60;rdf:type rdf:resource="http://dbpedia.org/ontology/TimePeriod"/&#62;
-          &#60;rdf:type rdf:resource="http://dbpedia.org/ontology/Year"/&#62;
-          &#60;dc:date&#62;1499&#60;/dc:date&#62;
-          &#60;crm:P10_falls_within rdf:resource="http://dbpedia.org/page/Renaissance"/&#62;
-          &#60;eac-cpf:resourceRelation rdf:parseType="Resource"&#62;
-            &#60;eac-cpf:resourceRelationType&#62;other&#60;/eac-cpf:resourceRelationType&#62;
-            &#60;dcterms:relation rdf:resource="http://semanticweb.org/visionsofgutenberg/HypnerotomachiaPoliphili"/&#62;
-            &#60;dc:description&#62;
-          In december 1499 this book was printed in Venice by Aldus Manutius, enriched with 169 xylographic illustrations.
-            &#60;/dc:description&#62;
-          &#60;/eac-cpf:resourceRelation&#62;
-
-          &#60;foaf:isPrimaryTopicOf rdf:resource="https://it.wikipedia.org/wiki/1499"/&#62;
-
-          &#60;/rdf:description&#62;
-          &#60;/rdf:RDF&#62;
+        &#60;http://semanticweb.org/visionsOfGutenberg/1499&#62;		
+	rdf:type &#60;http://dbpedia.org/ontology/TimePeriod&#62; ;
+	rdf:type &#60;http://dbpedia.org/ontology/Year&#62; ;
+	dc:date '1499' ;
+	eac-cpf:resourceRelation [
+		eac-cpf:resourceRelationType 'Other' ;
+		dcterms:relation &#60;http://semanticweb.org/visionsOfGutenberg/HypnerotomachiaPoliphili&#62; ;
+		dc:description 'In december 1499 this book was printed in Venice by Aldus Manutius, enriched with 169 xylographic illustrations.' ;
+	] ;
+	time:hasTSR &#60;http://www.opengis.net/def/uom/ISO-8601/0/Gregorian&#62; ;
+ 	foaf:isPrimaryTopicOf &#60;https://it.wikipedia.org/wiki/1499&#62; ;
+	crm:P10_falls_withins &#60;http://dbpedia.org/page/Renaissance&#62; .
+        </code></pre>
 
                 </code></pre>
     </div>
@@ -246,7 +260,7 @@
         <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
     </div>
     <div class="tab-pane" id="link6" aria-expanded="false">
-        <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">
+        <img src="images/1499g.png" class="img-fluid" alt="Responsive image">
     </div>
 </div> 
 

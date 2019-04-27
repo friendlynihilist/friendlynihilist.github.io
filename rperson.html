@@ -197,55 +197,55 @@
 
     </div>
     <div class="tab-pane" id="link2" aria-expanded="false">
-        <pre><code class="no highlighting">
-		Question    Predicate   Object
-		GUTENBERG       
-		@prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
-		@prefix foaf: &#60;http://xmlns.com/foaf/0.1/&#62;.
-		@prefix core: &#60;http://www.bbc.co.uk/ontologies/bbc/&#62;.
-		@prefix bf: &#60;http://id.loc.gov/ontologies/bibframe/&#62;.
-		@prefix eac-cpf: &#60;http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/&#62;.
-		@prefix dc: &#60;http://purl.org/dc/elements/1.1/&#62;.
-		@prefix dcterms: &#60;http://purl.org/dc/terms/&#62;.
-		@prefix owl: &#60;http://www.w3.org/2002/07/owl#&#62;.
-		@prefix skos: &#60;http://www.w3.org/2004/02/skos/core#&#62;.
+    	<pre><code class="no highlighting">
+	Question    Predicate   Object
+	GUTENBERG       
+	@prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+	@prefix foaf: &#60;http://xmlns.com/foaf/0.1/&#62;.
+	@prefix core: &#60;http://www.bbc.co.uk/ontologies/bbc/&#62;.
+	@prefix bf: &#60;http://id.loc.gov/ontologies/bibframe/&#62;.
+	@prefix eac-cpf: &#60;http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/&#62;.
+	@prefix dc: &#60;http://purl.org/dc/elements/1.1/&#62;.
+	@prefix dcterms: &#60;http://purl.org/dc/terms/&#62;.
+	@prefix owl: &#60;http://www.w3.org/2002/07/owl#&#62;.
+	@prefix skos: &#60;http://www.w3.org/2004/02/skos/core#&#62;.
 
 
 
-		&#60;http://semanticweb.org/visionsofgutenberg/Gutenberg&#62;
-		    rdf:type    &#60;http://xmlns.com/foaf/spec/#term_Person&#62; ;
-		    rdf:type &#60;http://dbpedia.org/class/yago/Printer110475297&#62; ;
-		    foaf:name   'Johannes Gutenberg' ;
-		    foaf:name   'Johannes Gensfleisch zur Laden zum Gutenberg' ;
-		    foaf:gender 'Male' ;
-		    core:dateOfBirth    '1400?' ;
-		    core:placeOfBirth   'Mainz' ;
-		    core:dateOfDeath    '1468/03/02' ;
-		    core:placeOfDeath   'Mainz' ;
-		    bf:language         'German' ;
-		    eac-cpf:resourceRelation    [
-		    eac-cpf:resourceRelationType    'Associate Of' ;
-			dc:description  'Gutenberg founded a societas with the goldsmith Johann Fust to print the christian Bible. Fust loaned Gutenberg 1600 dutch florins with which he could hire 20 workers and buy the printing materials.' ;
-			dcterms:relation   &#60;http://viaf.org/viaf/88647567&#62; ;
-			dc:date '1450' ;
-		    ] ;
-		    eac-cpf:resourceRelation [
-			eac-cpf:resourceRelationType    'Creator Of' ;
-			dc:description  'Gutenberg printed the 42-line Bible as the earliest major book using mass-produced movable metal type in Europe.' ;
-			dcterms:relation    &#60;http://semanticweb.org/visionsofgutenberg/42lineBible&#62; ;
-			dc:date '1455' ;
-			dc:description 'Gutenberg printed the 42-line Bible as the earliest major book using mass-produced movable metal type in Europe.' ;
+	&#60;http://semanticweb.org/visionsofgutenberg/Gutenberg&#62;
+	    rdf:type    &#60;http://xmlns.com/foaf/spec/#term_Person&#62; ;
+	    rdf:type &#60;http://dbpedia.org/class/yago/Printer110475297&#62; ;
+	    foaf:name   'Johannes Gutenberg' ;
+	    foaf:name   'Johannes Gensfleisch zur Laden zum Gutenberg' ;
+	    foaf:gender 'Male' ;
+	    core:dateOfBirth    '1400?' ;
+	    core:placeOfBirth   'Mainz' ;
+	    core:dateOfDeath    '1468/03/02' ;
+	    core:placeOfDeath   'Mainz' ;
+	    bf:language         'German' ;
+	    eac-cpf:resourceRelation    [
+	    eac-cpf:resourceRelationType    'Associate Of' ;
+		dc:description  'Gutenberg founded a societas with the goldsmith Johann Fust to print the christian Bible. Fust loaned Gutenberg 1600 dutch florins with which he could hire 20 workers and buy the printing materials.' ;
+		dcterms:relation   &#60;http://viaf.org/viaf/88647567&#62; ;
+		dc:date '1450' ;
+	    ] ;
+	    eac-cpf:resourceRelation [
+		eac-cpf:resourceRelationType    'Creator Of' ;
+		dc:description  'Gutenberg printed the 42-line Bible as the earliest major book using mass-produced movable metal type in Europe.' ;
+		dcterms:relation    &#60;http://semanticweb.org/visionsofgutenberg/42lineBible&#62; ;
+		dc:date '1455' ;
+		dc:description 'Gutenberg printed the 42-line Bible as the earliest major book using mass-produced movable metal type in Europe.' ;
 
-		    ] ;
-		    eac-cpf:biogHist 'Johannes Gutenberg was a German blacksmith, goldsmith, inventor, printer, and publisher who introduced mechanical movable type printing to Europe. He is considered to be the starter of the so called Printing Revolution, a milestone in human history. He invented the moveable type, the ink and the printing press.' ;
-		    eac-cpf:occupation 'Printer, inventor, blacksmith' ;
-		    foaf:interest   'Printing, Typography' ;
-		    owl:sameAs &#60;"https://viaf.org/viaf/9815820/"&#62; ;
-		    foaf:isPrimaryTopicOf &#60;http://www.gutenberg-museum.de/index.php?id=29&L=1&#62; ;
-		    foaf:isPrimaryTopicOf &#60;https://en.wikipedia.org/wiki/Johannes_Gutenberg&#62; ;
-		    dcterms:isPartOf &#60;http://id.loc.gov/vocabulary/relators/prt&#62; ;
-		    skos:related &#60;http://semanticweb.org/visionsofgutenberg/GutenbergPortrait&#62; ;
-		    skos:related &#60;http://viaf.org/viaf/222144783012221996488&#62; .
+	    ] ;
+	    eac-cpf:biogHist 'Johannes Gutenberg was a German blacksmith, goldsmith, inventor, printer, and publisher who introduced mechanical movable type printing to Europe. He is considered to be the starter of the so called Printing Revolution, a milestone in human history. He invented the moveable type, the ink and the printing press.' ;
+	    eac-cpf:occupation 'Printer, inventor, blacksmith' ;
+	    foaf:interest   'Printing, Typography' ;
+	    owl:sameAs &#60;"https://viaf.org/viaf/9815820/"&#62; ;
+	    foaf:isPrimaryTopicOf &#60;http://www.gutenberg-museum.de/index.php?id=29&L=1&#62; ;
+	    foaf:isPrimaryTopicOf &#60;https://en.wikipedia.org/wiki/Johannes_Gutenberg&#62; ;
+	    dcterms:isPartOf &#60;http://id.loc.gov/vocabulary/relators/prt&#62; ;
+	    skos:related &#60;http://semanticweb.org/visionsofgutenberg/GutenbergPortrait&#62; ;
+	    skos:related &#60;http://viaf.org/viaf/222144783012221996488&#62; .
 	</code></pre>
     </div>
     <div class="tab-pane" id="link3" aria-expanded="false">
@@ -348,8 +348,53 @@
                 </code></pre>
     </div>
     <div class="tab-pane" id="link5" aria-expanded="false">
-        Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas.
-        <br><br>Dynamically innovate resource-leveling customer service for state of the art customer service.
+        <pre><code class="no highlighting">
+	Question    Predicate   Object
+	MANUZIO      
+	@prefix rdf: &#60;http://www.w3.org/1999/02/22-rdf-syntax-ns#&#62;.
+	@prefix foaf: &#60;http://xmlns.com/foaf/0.1/&#62;.
+	@prefix core: &#60;http://www.bbc.co.uk/ontologies/bbc/&#62;.
+	@prefix bf: &#60;http://id.loc.gov/ontologies/bibframe/&#62;.
+	@prefix eac-cpf: &#60;http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/&#62;.
+	@prefix dc: &#60;http://purl.org/dc/elements/1.1/&#62;.
+	@prefix dcterms: &#60;http://purl.org/dc/terms/&#62;.
+	@prefix owl: &#60;http://www.w3.org/2002/07/owl#&#62;.
+	@prefix skos: &#60;http://www.w3.org/2004/02/skos/core#&#62;.
+
+	&#60;http://semanticweb.org/visionsofgutenberg/Manuzio&#62; 
+	    rdf:type    &#60;http://xmlns.com/foaf/spec/#term_Person&#62; ;
+	    rdf:type    &#60;http://dbpedia.org/class/yago/WikicatItalianRenaissanceHumanists&#62; ;
+	    foaf:name   'Aldo Manuzio' ;
+	    foaf:name   'Aldus Pius Manutius' ;
+	    foaf:gender 'Male' ;
+	    core:dateOfBirth    '1449?' ;
+	    core:placeOfBirth   'Bassiano' ;
+	    core:dateOfDeath    '1515/02/06' ;
+	    core:placeOfDeath   'Venezia' ;
+	    eac-cpf:resourceRelation    [
+		eac-cpf:resourceRelationType    'Client Of' ;
+		dcterms:relation &#60;http://viaf.org/viaf/51189284&#62; ;
+		dc:description  'Aldo Manuzio in 1501 bought typographical characters from Francesco Griffo in order to use them in one of his printed series of books' ;
+		dc:date '1501' ;
+	    ] ;
+	    eac-cpf:resourceRelation    [
+		eac-cpf:resourceRelationType    'Creator Of' ;
+		dc:description  'Manuzio printed the Hypnerotomachia Poliphili, one of the first books printed in Italy and also considered by reneissance people as the most beautiful book ever printed.' ;
+		dcterms:relation    &#60;http://semanticweb.org/visionsofgutenberg/HypnerotomachiaPoliphili&#62; ;
+		dc:date '1499' ;
+	] ;
+
+	    eac-cpf:occupation 'editor, grammarian, humanist' ;
+	    bf:language 'Italian' ;
+	    bf:language 'latin' ;
+	    eac-cpf:biogHist    'Aldo Manuzio was an Italian editor, grammarian and humanist. He is considered to be one of the major editors of all times, and also one of the first editors in the modern sense at all. Founder of the Aldine Press, he introduced the italic type and the octavo size.' ;
+	    foaf:interest   'Printing, Publishing, Typography' ;
+	    owl:sameAs &#60;http://viaf.org/viaf/96325760&#62; ;
+	    foaf:isPrimaryTopicOf &#60;http://id.sbn.it/bid/MIL0267110&#62; ;
+	    foaf:isPrimaryTopicOf &#60;https://en.wikipedia.org/wiki/Aldus_Manutius&#62; ;
+	    dcterms:ispartOf &#60;http://id.loc.gov/vocabulary/relators/pbl&#62; ;  
+	    skos:related &#60;http://viaf.org/viaf/54144140&#62; .
+	</code></pre>
     </div>
     <div class="tab-pane" id="link6" aria-expanded="false">
         <img src="images/incunableg.png" class="img-fluid" alt="Responsive image">

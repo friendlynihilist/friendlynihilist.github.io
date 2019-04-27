@@ -1,6 +1,5 @@
 TO DO LIST:
 [QUALSIASI COSA DA SISTEMARE VERRA' AGGIUNTA QUA]
-1) Correggere conceptual.html
 2) Correggere di conseguenza gli RDF/XML sul github printigrev
 x) Una volta che si hanno RDF/XML e Turtle, creare i grafi di tutti gli RDF/XML con il parser
 x) Una volta che si ha tutto il materiale, ripulire i Turtle per highlight.js (chiedete come)

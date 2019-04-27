@@ -254,7 +254,7 @@ extension
 
   <a class="anchor" id="person"></a>
   <h3 class="title">Person</h3>
-  <p>As we pointed out in the theoretical model, our aim was to describe people related to our items. To provide the basic information, we used <mark>FOAF</mark> and <mark>Core Concepts Ontology</mark>, while to add more specific information about the person’s relationship with an item and at least another person, we used <mark>EAC-CPF</mark> (precisely <mark>&60;eac-cpf:resourceRelation&62;</mark>). In this “description block” we also used <mark>DC</mark> to extend the relationships descriptions. Finally, we used Bibframe to add information about the spoken language and again EAC-CPF for a brief biography.</p>
+  <p>As we pointed out in the theoretical model, our aim was to describe people related to our items. To provide the basic information, we used <mark>FOAF</mark> and <mark>Core Concepts Ontology</mark>, while to add more specific information about the person’s relationship with an item and at least another person, we used <mark>EAC-CPF</mark> (precisely <mark>eac-cpf:resourceRelation</mark>). In this “description block” we also used <mark>DC</mark> to extend the relationships descriptions. Finally, we used <mark>BIBFRAME</mark> to add information about the spoken language and again EAC-CPF for a brief biography.</p>
 
       <!-- tabella -->
   <div class="scrollme">
@@ -344,13 +344,13 @@ extension
       <th scope="row" style="padding-left: 40px;">What is the object of the relation?</th>
       <td></td>
       <td></td>
-      <td>dct:relation</td>
+      <td>dcterms:relation</td>
     </tr>
     <tr>
       <th scope="row" style="padding-left: 40px;">When the relation started?</th>
       <td></td>
       <td></td>
-      <td>bf:date</td>
+      <td>dc:date</td>
     </tr>
     <tr>
       <th scope="row">What is the relation with a particular resource?</th>
@@ -374,13 +374,13 @@ extension
       <th scope="row" style="padding-left: 40px;">What is the object of the relation?</th>
       <td></td>
       <td></td>
-      <td>dct:relation</td>
+      <td>dcterms:relation</td>
     </tr>
     <tr>
       <th scope="row" style="padding-left: 40px;">When the relation started?</th>
       <td></td>
       <td></td>
-      <td>bf:date</td>
+      <td>dc:date</td>
     </tr>
     <tr>
       <th scope="row">What about the biographical history?</th>
@@ -401,15 +401,27 @@ extension
       <td></td>
     </tr>
     <tr>
+      <th scope="row">What is a related resource in which this entity is physically or logically included?</th>
+      <td>entity</td>
+      <td>dcterms:ispartOf</td>
+      <td></td>
+    </tr>
+    <tr>
       <th scope="row">Which resources refer to the same entity?</th>
       <td>entity</td>
       <td>owl:sameAs</td>
       <td></td>
     </tr>
     <tr>
-      <th scope="row">Which resources have the person as primary topic?</th>
+      <th scope="row">Which resources have this entity as primary topic?</th>
       <td>entity</td>
       <td>foaf:isPrimaryTopicOf</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th scope="row">Which other resources are related to the same entity?</th>
+      <td>entity</td>
+      <td>skos:related</td>
       <td></td>
     </tr>
     
@@ -556,13 +568,7 @@ extension
       <th scope="row" style="padding-left: 40px;">What is the object of the relation?</th>
       <td></td>
       <td></td>
-      <td>dct:relation</td>
-    </tr>
-    <tr>
-      <th scope="row" style="padding-left: 40px;">When the relation started?</th>
-      <td></td>
-      <td></td>
-      <td>bf:date</td>
+      <td>dcterms:relation</td>
     </tr>
     <tr>
       <th scope="row">In which period falls this date?</th>

@@ -1,0 +1,14 @@
+TO DO LIST:
+[QUALSIASI COSA DA SISTEMARE VERRA' AGGIUNTA QUA]
+1) Correggere conceptual.html
+2) Correggere di conseguenza gli RDF/XML sul github printigrev
+x) Una volta che si hanno RDF/XML e Turtle, creare i grafi di tutti gli RDF/XML con il parser
+x) Una volta che si ha tutto il materiale, ripulire i Turtle per highlight.js (chiedete come)
+3) Creare lista per download di XML, Turtle e grafo per ogni entities nella pagina rdf.html
+4) Controllare che tutta la documentazione sia corretta, coerente e uniforme
+5) Ricontrollare che tutta la documentazione sia corretta, coerente e uniforme
+6) Controllare che tutti i link contestuali interni e tutti i link esterni siano funzionanti
+7) Testare sito su dispositivo MacOS
+x) Convertire le immagini in formato webready per ottimizzare caricamento pagina
+x) Mettere gli "alt" ad ogni immagine per UX
+x) Finire bio Carlo Teo Pedretti

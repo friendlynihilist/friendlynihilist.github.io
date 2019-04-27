@@ -9,26 +9,7 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <!-- internal style -->
-  <style>
-  #titolone
-  {
-    font-family: 'Goudy Bookletter 1911', serif;
-    text-shadow: rgb(0, 0, 0) 0px 1px 3px;
-    color:#C0B283;
-  }
-
-  h3
-  {
-    font-family: 'Roboto Slab', sans-serif;
-    font-size: 2vw;
-  }
-
-  h4
-  {
-    font-family: 'Goudy Bookletter 1911', serif;
-  }
-
-  </style>
+  
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Goudy+Bookletter+1911|Space+Mono|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
@@ -133,15 +114,33 @@
     	
       <div class="section">
       	<img src="images/logo.png" class="img-fluid" alt="Gutenberg" id="gutenbergbg">
-        <h2 class="title">The Project</h2>
-        <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
-          Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.
+      	<div style="position: relative;">
+        <h2 class="title">Project Overview</h2>
+        <p><mark>Visions of Gutenberg</mark> is a project realized by Francesca Mangialardo, Carlo Teo Pedretti and Mattia Spadoni for the final examination of the course Knowledge Organization and Digital Methods in the Cultural Heritage Domain held by Francesca Tomasi within the master course <mark>Digital Humanities and Digital Knowledge</mark> (University of Bologna).
         </p>
+        <p>Overall, the assignment was to create a project that could encourage our understanding and re-thinking of the use of Linked Open Data in <mark>Libraries, Archives and Museums</mark> (LODLAM). 
+       	</p>
+       	<p>
+       	First of all, we <mark>planned</mark> our project following the guidelines provided by professor Tomasi. We thinked about the <mark>aim</mark> of our work, the <mark>digital objects</mark> that we would have to manage, the <mark>tools</mark> and the <mark>theory</mark> that could help us in the management, and the final <mark>interface</mark> to best represent everything. We decided to work together and simultaneously on the various activity steps to make good use of each other’s knowledge and skills, and to quickly identify and solve both conceptual and technical problems.
+       	</p>
+       	<p>
+       	Firstly, we selected a core idea that could be represented by a variety of ten or more items and that could also offer information interconnections. The <mark>printing revolution</mark> seemed to be a fair choice, since it was of interest to all of us and it fulfilled the previously mentioned requirements. 
+		Moreover, we accepted the challenge of providing variety in the items typology, since the most “natural” resources offered for this theme would mainly be bibliographical ones (e.g., <i>incunabula</i>). We tried to include unconventional items like the coin or the press. 
+		Right after, we designed the E/R model to represent the logical foundation and the main features of our topic. We focused on creating a quite abstract and eventually reusable model.
+		</p>
+       	<p>
+       	In the next step, we studied the metadata standard used to describe each item. We focused on observing differences and similarities within schemes created for the same kind of cultural objects (like MARC 21 and ISBD), and we also reflected on the diverse approach of those standards used to describe different typologies of items (DC, EDM, LIDO). From this analysis, we were able to understand the main structure of metadata records and the differences in syntax, structure, content and vocabularies used in the domain.
+		As a natural consequence, we wrote an alignment between the schemes we ran into and we made use of it in designing the theoretical and later the conceptual model. 
+       	</p>
+       	<p>
+       		The theoretical model was carried out as an enrichment of the E/R model where we defined which properties we wanted to express. It was very important not to keep us chained to the existing ontologies: there were some features of our items that we really wanted to express, but we couldn't find any related property. Since creating a full ontology would be too expensive, we just suggested some new hypothetical properties (to define one’s religion and to describe places/states as different territorial extensions or domains in different historical times).
+       	</p>
+       	<p>
+       	To build the conceptual model was the hardest part of the job, since we had to look for the most suitable ontologies to express those properties that we pointed out in the theoretical model. We splitted the job, so each one of us studied the documentation of some ontologies and then we shared our discoveries to find a common solution. 
+In the end, we had to actually write down a <mark>serialization of our data</mark>, working with <mark>Turtle</mark> syntax and <mark>RDF/XML</mark>. 
+The most interesting part was to create links to authorities and external resources, to really put our project inside the <mark>Semantic Web</mark> environment. For this, we followed the example of <a href="http://vespasianodabisticciletters.unibo.it/index.html"><b>Vespasiano da Bisticci Letters</b></a>. We focused on providing connections between our data and the items inside our collection, but also with the external resources existing elsewhere, with the aim of letting our project dialogue with the World Wide Web. 
+       	</p>
+       </div>
   <!-- fine main content -->
 
 
@@ -154,7 +153,7 @@
                   <i class="fas fa-sitemap"></i>
                 </div>
                 <h4 class="info-title"><a href="ermodel.html">E/R Model</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see the Entity Relationship Model of our project.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -163,7 +162,7 @@
                   <i class="fas fa-cubes"></i>
                 </div>
                 <h4 class="info-title"><a href="items.html">Items</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see the collection of items.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -172,7 +171,7 @@
                   <i class="fas fa-stream"></i>
                 </div>
                 <h4 class="info-title"><a href="metadata.html">Metadata Alignments</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see the alignment table for items metadata.</p>
               </div>
             </div>
           </div>
@@ -185,7 +184,7 @@
                   <i class="far fa-object-group"></i>
                 </div>
                 <h4 class="info-title"><a href="theoretical.html">Theoretical Model</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Creation of an abstract model in natural language in order to determine the relevant information useful to describe our idea (in the form of who-where-when-what questions).</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -194,7 +193,7 @@
                   <i class="far fa-map"></i>
                 </div>
                 <h4 class="info-title"><a href="conceptual.html">Conceptual Model</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see the conceptual model of our project.</p>
               </div>
             </div>
             
@@ -215,7 +214,7 @@
                   <i class="far fa-file-alt"></i>
                 </div>
                 <h4 class="info-title"><a href="description.html">Description of Data</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see the data description of people, places, dates and concepts concerning our project.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -224,7 +223,7 @@
                   <i class="fas fa-code"></i>
                 </div>
                 <h4 class="info-title"><a href="rdf.html">RDF/XML</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to access RDF/XML, Turtle syntax and graphs for the entities.</p>
               </div>
             </div>
             <div class="col-md-4">
@@ -233,7 +232,7 @@
                   <i class="fab fa-connectdevelop"></i>
                 </div>
                 <h4 class="info-title"><a href="lod.html">Connection to Authorities and other resources</a></h4>
-                <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+                <p>Click the info title to see how we linked our entities to authorities and resources.</p>
               </div>
             </div>
           </div>

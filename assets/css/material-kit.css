@@ -25,6 +25,11 @@ per cambiare opacità del dropdown cercare .open>.dropdown-menu,
 
   e cambiare opacity in .1
  */
+.contatti {
+    height:300px;
+    width:100%;
+}
+ 
 
  a.anchor {
           display: block;

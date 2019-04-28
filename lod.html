@@ -103,8 +103,91 @@
         <h2 class="title">Connection to Authorities and other resources</h2>
         <p>People, places and concepts were reconciled to their related authorities through the <mark>OWL</mark> (Web Ontology Language) owl:sameAs property.
             When necessary, we also used owl:differentFrom to disambiguate.  
-We also created links to other resources that held semantic associations with our data, both external resources found on the Web and internal resources from our collection. We made this using various ontologies. The most useful were <mark>SKOS</mark> (skos:related, skos:narrower, skos:broader), <mark>FOAF</mark> (foaf:isPrimaryTopicOf) and <mark>DC Terms</mark> (dcterms:isPartOf).
+We also created links to other resources that held semantic associations with our data, both external resources found on the Web and internal resources from our collection. We made this using various ontologies. The most useful were <mark>SKOS</mark> (skos:related, skos:narrower, skos:broader), <mark>FOAF</mark> (foaf:isPrimaryTopicOf) and <mark>DC Terms</mark> (dcterms:isPartOf). RDF/XML allows us to create semantic connections between our entities and external databases such as WikiData, DBpedia, YAGO, LoC SH, etc. In order to associate our entities, we provided them and some of the items with URIs, e.g.:
         </p>
+        
+        <ul>
+<li>42-line Bible - <mark>http://semanticweb.org/visionsofgutenberg/42lineBible</mark></li>
+<li>Johannes Gutenberg - <mark>http://semanticweb.org/visionsofgutenberg/Gutenberg</mark></li>
+<li>Mainz - <mark>http://semanticweb.org/visionsofgutenberg/Mainz</mark></li>
+<li>1455 - <mark>http://semanticweb.org/visionsofgutenberg/1455</mark></li>
+<li>Printing Press Revolution - <mark>http://semanticweb.org/visionsofgutenberg/PrintingRevolution</mark></li>
+
+        </ul>
+        
+    <h2 class="title" style="float:left;"><small class="text-muted">person/</small>Johannes Gutenberg</h2>
+<p><b>URI:</b> <mark>http://semanticweb.org/visionsofgutenberg/Gutenberg</mark></p>
+
+<ul>
+<li> <mark>owl:sameAs rdf:resource=https://viaf.org/viaf/9815820/</mark></li>
+<p>The OWL property <mark>sameAs</mark> allows us to create a semantic relation of identity between our resource and the one in VIAF, an international authority file.</p>
+
+<li> <mark>foaf:isPrimaryTopicOf rdf:resource=http://www.gutenberg-museum.de/index.php?id=29&#L=1</mark></li>
+<p>The FOAF property <mark>isPrimaryTopicOf</mark> means that our resource is the primary topic of the institution Gutenberg Museum.</p>
+
+<li> <mark>skos:related rdf:resource="http://viaf.org/viaf/222144783012221996488"</mark></li>
+<p>The SKOS property <mark>related</mark> means that our resource has an associative relation with a resource in VIAF, in this case Peter Schoeffer. We also created another internal relation between Gutenberg and an item from our collection, the Gutenberg Bible.</p>
+
+
+<li> <mark>dcterms:ispartOf rdf:resource=”http://id.loc.gov/vocabulary/relators/prt”</mark></li>
+<p>The DC Terms property <mark>ispartof</mark> means that our resource is a part of a whole, in this case of the category “printers”, contained into LoC vocabulary.</p>
+
+</ul>
+
+
+<h2 class="title" style="float:left;"><small class="text-muted">place/</small>Mainz</h2>
+<p><b>URI:</b> <mark>http://semanticweb.org/visionsofgutenberg/Mainz</mark></p>
+
+
+<ul>
+<li> <mark>owl:sameAs rdf:resource=http://dbpedia.org/page/Mainz</mark></li>
+<p>The OWL property <mark>sameAs</mark> allows us to create a semantic relation of identity between our resource and the one in DBpedia, an external database.</p>
+
+<li> <mark>owl:differentFrom rdf:resource="https://en.wikipedia.org/wiki/SMS_Mainz"</mark></li>
+<p> The OWL property <mark>differentFrom</mark> allows us to semantically disambiguate our resource from the one in Wikipedia.</p>
+
+<li> <mark> skos:broader rdf:resource="http://viaf.org/viaf/123162663"</mark></li>
+<p>The SKOS property <mark>broader</mark> creates a hierarchical relation between our resource and the one in VIAF. In this case, Rhineland-Palatinate is broader than Mainz.</p>
+
+<li> <mark> skos:narrower rdf:resource="http://viaf.org/viaf/123162663"</mark></li>
+<p>The SKOS property <mark>broader</mark> creates a hierarchical relation between our resource and the one in VIAF. In this case, Rhineland-Palatinate is broader than Mainz.</p>
+</ul>
+
+
+
+<h2 class="title" style="float:left;"><small class="text-muted">date/</small>1455</h2>
+<p><b>URI:</b> <mark>http://semanticweb.org/visionsofgutenberg/1455</mark></p>
+
+
+<ul>
+<li> <mark>foaf:isPrimaryTopicOf rdf:resource=http://www.gutenberg-museum.de/index.php?id=29&#L=1</mark></li>
+<p>The FOAF property <mark>isPrimaryTopicOf</mark> means that our resource is the primary topic of a Wikipedia page.</p>
+</ul>
+
+
+
+
+
+<h2 class="title" style="float:left;"><small class="text-muted">concept/</small>Printing Press Revolution</h2>
+<p><b>URI:</b> <mark>http://semanticweb.org/visionsofgutenberg/PrintingRevolution</mark></p>
+
+
+<ul>
+<li> <mark>owl:sameAs rdf:resource=http://id.loc.gov/authorities/subjects/sh85106826</mark></li>
+<p>The OWL property <mark>sameAs</mark> allows us to create a semantic relation of identity between our resource and the one in the LoC Subject Headings.</p>
+
+<li> <mark>owl:differentFrom rdf:resource="https://en.wikipedia.org/wiki/SMS_Mainz"</mark></li>
+<p> The OWL property <mark>differentFrom</mark> allows us to semantically disambiguate our resource from the one in the LoC Subject Headings, namely engraving.</p>
+
+<li> <mark> skos:broader rdf:resource="http://dbpedia.org/page/Category:Technology_in_society"</mark></li>
+<p>The SKOS property <mark>broader</mark> creates a hierarchical relation between our resource and the one in DBpedia. In this case, Technology in society is a broader phenomenon than Printing Revolution.</p>
+
+<li> <mark> skos:narrower rdf:resource="http://dbpedia.org/page/Typography"</mark></li>
+<p>The SKOS property <mark>narrower</mark> creates a hierarchical relation between our resource and the one in DBpedia. In this case, Typography is narrower than Printing Revolution.</p>
+</ul>
+
+        
+        
   <!-- fine main content -->
 
       

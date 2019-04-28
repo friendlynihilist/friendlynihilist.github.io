@@ -44,7 +44,7 @@ Johannes Gutenberg was a German blacksmith, goldsmith, inventor, printer, and pu
 </eac-cpf:resourceRelation>
 
 <owl:sameAs rdf:resource="https://viaf.org/viaf/9815820/"/>
-<foaf:isPrimaryTopicOf rdf:resource="http://www.gutenberg-museum.de/index.php?id=29&L=1"/>
+<foaf:isPrimaryTopicOf rdf:resource="http://www.gutenberg-museum.de/index.php?id=29&amp;L=1"/>
 <foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/Johannes_Gutenberg"/>
 <dcterms:ispartOf rdf:resource="http://id.loc.gov/vocabulary/relators/prt"/>
 <skos:related rdf:resource="http://viaf.org/viaf/222144783012221996488"/>
